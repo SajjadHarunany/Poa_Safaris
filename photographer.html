@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src 'self' https://www.google.com; frame-src 'self' https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
     <style>
         :root {
             --primary: #a16e5d; /* rgba(161, 110, 93) */
@@ -53,7 +55,7 @@
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="nav-cta">
-                <a href="https://wa.me/254722452828" target="_blank" class="btn btn-primary">Chat Now</a>
+                <a href="https://wa.me/254722452828" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Chat Now</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -89,9 +91,9 @@
                 <h3 class="mt-2">Contact & Booking</h3>
                 <p>To book Suleiman for your trip or to inquire about rates, please contact him directly:</p>
                 <ul class="contact-list-page">
-                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/14163332184?text=Hello!%20I%20am%20interested%20in%20hiring%20a%20photographer." target="_blank">+1 (416) 333-2184</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/14163332184?text=Hello!%20I%20am%20interested%20in%20hiring%20a%20photographer." target="_blank" rel="noopener noreferrer">+1 (416) 333-2184</a></li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:suleimansaleem.ss@gmail.com">suleimansaleem.ss@gmail.com</a></li>
-                    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/suleiman_harunany?igsh=MXV0ZDJiODJpam0yaQ==" target="_blank">@suleiman_harunany</a></li>
+                    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/suleiman_harunany?igsh=MXV0ZDJiODJpam0yaQ==" target="_blank" rel="noopener noreferrer">@suleiman_harunany</a></li>
                 </ul>
                  <a href="mailto:suleimansaleem.ss@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;">Inquire Via Email</a>
             </div>
@@ -108,7 +110,7 @@
                 <img src="Photog.jpg" width="150" height="150" alt="Photographer Logo" class="footer-logo" style="border-radius: 50%;" loading="lazy" />
             </div>
             <div class="social-links-footer" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                <a href="https://www.instagram.com/suleiman_harunany?igsh=MXV0ZDJiODJpam0yaQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/suleiman_harunany?igsh=MXV0ZDJiODJpam0yaQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="mailto:suleimansaleem.ss@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+14163332184" aria-label="Phone"><i class="fas fa-phone"></i></a>
             </div>
@@ -119,7 +121,7 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="floating-actions">
-        <a href="https://wa.me/14163332184" class="float-btn float-wa" target="_blank" aria-label="Chat on WhatsApp">
+        <a href="https://wa.me/14163332184" class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
