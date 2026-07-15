@@ -5,15 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poa Safaris, Tours & Car Hire Ltd | Kenya</title>
     <meta name="description" content="Design a custom private safari in Kenya. Enjoy personalized tours to Tsavo, Amboseli, Masai Mara and reliable car hire.">
+    <meta name="keywords" content="Kenya safari, private tours, custom safari, car hire Kenya, Masai Mara, Amboseli, Tsavo, Poa Safaris">
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Favicon (used in the browser tab) -->
     <link rel="icon" type="image/png" href="Poalogo.jpeg">
-    <link rel="shortcut icon" type="image/x-icon" href="Poalogo.jpeg">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Poa Safaris, Tours & Car Hire Ltd",
+      "image": "https://www.poasafaris.co.ke/Poa_logo-nobg.png",
+      "url": "https://www.poasafaris.co.ke/",
+      "telephone": "+254722452828",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jomo Kenyatta Avenue",
+        "addressLocality": "Mombasa",
+        "addressCountry": "KE"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      } 
+    }
+    </script>
 
 </head>
 <body>
@@ -23,7 +57,7 @@
         <div class="container">
             <!-- Correct Logo Image Tag -->
             <a href="index.html" class="logo">
-                <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="logo-img">
+                <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="logo-img" width="160" height="50">
             </a>
             <nav class="nav-links">
                 <a href="#home">Home</a>
@@ -61,7 +95,7 @@
     <section id="about" class="section">
         <div class="container about-layout">
             <div class="about-image">
-                <img src="Places to visit.png" alt="Map of Kenya" class="rounded-img">
+                <img src="Places to visit.png" alt="Map of Kenya highlighting safari destinations" class="rounded-img" loading="lazy" width="555" height="465">
             </div>
             <div class="about-text">
                 <p class="subtitle-caps">WHY TRAVEL WITH US?</p>
@@ -204,7 +238,7 @@
                 <a href="https://wa.me/254722452828?text=I'm%20interested%20in%20car%20hire" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Inquire About Car Hire</a>
             </div>
             <div class="about-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjGqdlAd8eBhYlrHgprNXrhlJpMGM3TEbJcNlSgK3Eg&s=10" alt="Safari vehicle" class="rounded-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjGqdlAd8eBhYlrHgprNXrhlJpMGM3TEbJcNlSgK3Eg&s=10" alt="White safari land cruiser with pop-up roof" class="rounded-img" loading="lazy" width="555" height="370">
             </div>
         </div>
     </section>
@@ -213,7 +247,7 @@
     <section id="photographer-promo" class="section">
         <div class="container about-layout">
             <div class="about-image">
-                <img src="Feature.jpg" alt="Photographer capturing wildlife on a safari" class="rounded-img">
+                <img src="Feature.jpg" alt="Photographer capturing wildlife on a safari" class="rounded-img" loading="lazy" width="555" height="370">
             </div>
             <div class="about-text">
                 <p class="subtitle-caps">CAPTURE YOUR MEMORIES</p>
@@ -256,9 +290,9 @@
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">
-                <div class="footer-brand">
-                    <img src="Poalogo.jpeg" width="150" height="50" alt="Poa Safaris Logo" class="footer-logo" />
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="footer-logo" style="max-height: 50px; width: auto;" loading="lazy">
+                </a>
                 <p>Hand-crafted private custom safaris, day trips, and premium car hire based in Mombasa, Kenya.</p>
             </div>
             <div class="footer-col">
@@ -311,61 +345,7 @@
         </a>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Navbar scroll effect
-            const navbar = document.querySelector('.navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-
-            // Statistics Counter Animation
-            const counters = document.querySelectorAll('.counter');
-            if (counters.length > 0) {
-                const speed = 200; // Slower animation
-
-                const animateCounter = (counter) => {
-                    const updateCount = () => {
-                        const target = +counter.getAttribute('data-target');
-                        const count = +counter.innerText;
-                        const inc = target / speed;
-
-                        if (count < target) {
-                            counter.innerText = Math.ceil(count + inc);
-                            setTimeout(updateCount, 15); // Smoother interval
-                        } else {
-                            counter.innerText = target;
-                        }
-                    };
-                    updateCount();
-                };
-
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            animateCounter(entry.target);
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.5 }); // Trigger when 50% is visible
-
-                counters.forEach(counter => {
-                    observer.observe(counter);
-                });
-            }
-
-            // Mobile Menu Toggle
-            const menu = document.getElementById('mobile-menu');
-            const navLinks = document.querySelector('.nav-links');
-            menu.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        });
-    </script>
+    <!-- Centralized JavaScript File -->
+    <script src="script.js" defer></script>
 </body>
 </html>

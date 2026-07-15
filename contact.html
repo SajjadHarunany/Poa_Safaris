@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Poa Safaris</title>
+    <title>Contact Poa Safaris | Plan Your Kenyan Adventure</title>
+    <meta name="description" content="Contact Poa Safaris for custom safari quotes, car hire inquiries, or to plan your trip. Reach us via WhatsApp, email, or phone for instant support.">
+    <meta name="keywords" content="contact poa safaris, kenya safari booking, mombasa car hire contact, whatsapp safari quote">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +18,7 @@
     <header class="navbar scrolled"> <!-- Add 'scrolled' class for solid background -->
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="logo-img">
+                <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="logo-img" width="160" height="50">
             </a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
@@ -101,9 +106,9 @@
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">
-                <div class="footer-brand">
-                    <img src="Poalogo.jpeg" width="150" height="50" alt="Poa Safaris Logo" class="footer-logo" />
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="Poa_logo-nobg.png" alt="Poa Safaris Logo" class="footer-logo" style="max-height: 50px; width: auto;" loading="lazy">
+                </a>
                 <p>Hand-crafted private custom safaris, day trips, and premium car hire based in Mombasa, Kenya.</p>
             </div>
             <div class="footer-col">
@@ -156,16 +161,7 @@
         </a>
     </div>
 
-    <script>
-        // Mobile Menu Toggle
-        document.addEventListener("DOMContentLoaded", () => {
-            const menu = document.getElementById('mobile-menu');
-            const navLinks = document.querySelector('.nav-links');
-
-            menu.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        });
-    </script>
+    <!-- Centralized JavaScript File -->
+    <script src="script.js" defer></script>
 </body>
 </html>
