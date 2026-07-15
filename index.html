@@ -37,6 +37,11 @@
             <div class="nav-cta">
                 <a href="https://wa.me/254722452828" target="_blank" class="btn btn-primary">Book Now</a>
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -353,6 +358,13 @@
                     observer.observe(counter);
                 });
             }
+
+            // Mobile Menu Toggle
+            const menu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            menu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
 </body>

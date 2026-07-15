@@ -50,6 +50,11 @@
             <div class="nav-cta">
                 <a href="https://wa.me/254722452828" target="_blank" class="btn btn-primary">Chat Now</a>
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -79,7 +84,7 @@
                 <h3 class="mt-2">Contact & Booking</h3>
                 <p>To book Suleiman for your trip or to inquire about rates, please contact him directly:</p>
                 <ul class="contact-list-page">
-                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/14163332184" target="_Hello! I am interested in hiring a photographer.">+1 (416) 333-2184</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/14163332184?text=Hello!%20I%20am%20interested%20in%20hiring%20a%20photographer." target="_blank">+1 (416) 333-2184</a></li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:suleimansaleem.ss@gmail.com">suleimansaleem.ss@gmail.com</a></li>
                     <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/suleiman_harunany?igsh=MXV0ZDJiODJpam0yaQ==" target="_blank">@suleiman_harunany</a></li>
                 </ul>
@@ -114,6 +119,16 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
