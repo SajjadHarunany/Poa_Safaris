@@ -18,7 +18,7 @@
     <!-- Favicon (used in the browser tab) -->
     <link rel="icon" type="image/jpeg" href="Poalogo.jpeg">
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src 'self' https://www.google.com; frame-src 'self' https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src 'self' https://www.google.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 
     <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
@@ -53,6 +53,7 @@
 
 </head>
 <body>
+<main>
 
     <!-- Navigation Header -->
     <header class="navbar">
@@ -64,6 +65,7 @@
             <nav class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
+                <a href="blog.html">Blog</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="destinations.html">Destinations</a>
                 <a href="photographer.html">Photographer</a>
@@ -273,17 +275,17 @@
             <div class="details-box">
                 <h2>Get In Touch</h2>
                 <p><strong>Poa Safaris, Tours & Car Hire Ltd</strong></p>
-                <p><i class="fas fa-map-marker-alt text-primary"></i> Jomo Kenyatta Avenue, Mombasa</p>
-                <p><i class="fas fa-phone text-primary"></i> +254 722 452828</p>
-                <p><i class="far fa-envelope text-primary"></i> info@poasafaris.co.ke</p>
-                
-                <h3 class="mt-2">Instant Support</h3>
-                <a href="https://wa.me/254722452828" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="margin-top: 10px;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                <p><i class="fas fa-map-marker-alt text-primary"></i> <a href="https://maps.app.goo.gl/Ln6xXHCZymjDhqwm7" target="_blank" rel="noopener noreferrer">Shaan Auto Parts, Jomo Kenyatta Ave, Mombasa</a></p>                
+                <p><i class="fas fa-phone text-primary"></i> <a href="tel:+254722452828">+254 722 452828</a></p>
+                <p><i class="far fa-envelope text-primary"></i> <a href="mailto:info@poasafaris.co.ke">info@poasafaris.co.ke</a></p>
+                <p><i class="fab fa-whatsapp text-primary"></i> <a href="https://wa.me/254722452828" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+                <p><i class="fab fa-instagram text-primary"></i> <a href="https://www.instagram.com/_poasafaris_/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a></p>
+                <a href="https://wa.me/254722452828" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="margin-top: 2rem;"><i class="fab fa-whatsapp"></i> Instant Support via WhatsApp</a>
             </div>
 
             <!-- Google Map Embed -->
             <div class="map-container">
-                <iframe src="https://maps.google.com/maps?q=Shaan+Auto+Parts,+Jomo+Kenyatta+Avenue,+Mombasa,+Kenya&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; border-radius: 8px; min-height: 350px;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.831034533019!2d39.6610003758693!3d-4.05830994544716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012dd25407077%3A0x89437142d139318!2sShaan%20Auto%20Parts!5e0!3m2!1sen!2ske!4v1721154952401!5m2!1sen!2ske" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -314,7 +316,7 @@
                 <ul class="footer-contact-list">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Jomo+Kenyatta+Ave,+Mombasa,+Kenya" target="_blank" rel="noopener noreferrer">Jomo Kenyatta Ave, Mombasa</a>
+                        <a href="https://maps.app.goo.gl/Ln6xXHCZymjDhqwm7" target="_blank" rel="noopener noreferrer">Shaan Auto Parts, Jomo Kenyatta Ave, Mombasa</a>
                     </li>
                     <li>
                         <i class="fas fa-phone"></i>
@@ -336,17 +338,21 @@
             </div>
         </div>
         <div class="footer-bottom container">
-            <p>&copy; 2026 Poa Safaris, Tours & Car Hire Ltd. All Rights Reserved.</p>
+            <p>&copy; 2024 Poa Safaris, Tours & Car Hire Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating Actions -->
+    <a href="#" class="back-to-top-btn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <div class="floating-actions">
         <a href="https://wa.me/254722452828" class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
+</main>
     <!-- Centralized JavaScript File -->
     <script src="script.js" defer></script>
 </body>
